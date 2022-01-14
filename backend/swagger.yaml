@@ -1,0 +1,59 @@
+swagger: "2.0"
+info:
+  description: "This API returns investors and their investments"
+  version: "1.0.0"
+  title: "ScalingFunds Mock Investor API"
+host: "localhost:8000"
+basePath: "/"
+schemes:
+  - "http"
+paths:
+  /:
+    get:
+      summary: "Get all investors and their investments"
+      operationId: "getInvestors"
+      produces:
+        - "application/json"
+      responses:
+        200:
+          description: "List of investors and investments"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/InvestorsResponse"
+definitions:
+  InvestorsResponse:
+    type: "object"
+    properties:
+      data:
+        type: "object"
+        properties:
+          investors:
+            type: "array"
+            items:
+              $ref: "#/definitions/Investor"
+  Investor:
+    type: "object"
+    properties:
+      id:
+        type: "string"
+        format: "uuid"
+      first_name:
+        type: "string"
+      last_name:
+        type: "string"
+      investments:
+        type: "array"
+        items:
+          $ref: "#/definitions/Investment"
+  Investment:
+    type: "object"
+    properties:
+      id:
+        type: "integer"
+        format: "uuid"
+      amount:
+        type: "integer"
+        format: "int64"
+      currency:
+        type: "string"

@@ -1,0 +1,50 @@
+{
+  "data":{
+    "investors": [
+      {
+        "id": "192b3bcd-251f-430a-b362-7ae831f645a3",
+        "first_name": "Joe",
+        "last_name": "Bloggs",
+        "investments": [
+          {
+            "id": "2a2c42d3-f5a3-49e0-89e6-0428ce3137d0",
+            "amount": 100000,
+            "currency": "EUR"
+          },
+          {
+            "id": "57b22818-49e6-4c54-9dba-1d9a90d06247",
+            "amount": 50000,
+            "currency": "USD"
+          },
+          {
+            "id": "f9178849-3558-46d3-b254-ccabdd6c56d7",
+            "amount": 1200000,
+            "currency": "EUR"
+          }
+        ]
+      },
+      {
+        "id": "50cf889c-bb05-4dcc-a8a1-4277f7d60892",
+        "first_name": "Martin",
+        "last_name": "McFly",
+        "investments": [
+          {
+            "id": "1ef608ab-a765-426d-95a3-3b61e9ac1e82",
+            "amount": 145125,
+            "currency": "EUR"
+          },
+          {
+            "id": "7b547e06-5a4c-4fe4-a9bb-90284fae4ec2",
+            "amount": 616361,
+            "currency": "USD"
+          },
+          {
+            "id": "e7d6aa81-1ae9-4678-8a48-1159f11d5580",
+            "amount": 24124,
+            "currency": "EUR"
+          }
+        ]
+      }
+    ]
+  }
+}
